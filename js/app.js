@@ -17,17 +17,24 @@ buttons.forEach((elem) => {
         let bills = parseInt(bill.value);
         if (typeof parseInt(persons.value) === 'number') {
             var tipsAmt = percentCalculator(bills, Percentvals)
-            num1.innerHTML = tipsAmt;
+            num1.innerHTML = `$${tipsAmt}`;
         }
         persons.addEventListener('input', () => {
-            let total = tipsAmt * parseInt(persons.value);
+            let total = tipsAmt * parseFloat(persons.value);
+            let total2 = parseFloat(total.toFixed(2));
+
             if (persons.value === '') {
                 num2.innerHTML = '$0.00'
             }
-            else {
-                num2.innerHTML = total;
+            else if (persons.value) {
+                num2.innerHTML = `$${total2}`;
             }
         })
-
     })
+})
+reset.addEventListener('click', () => {
+    persons.value = '';
+    bill.value = '';
+    num1.innerHTML = '$0.00';
+    num2.innerHTML = '$0.00'
 })

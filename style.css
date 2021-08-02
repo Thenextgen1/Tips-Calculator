@@ -70,6 +70,10 @@ body {
     background-repeat: no-repeat;
     background-position: 1em 0.3rem;  
 }
+.selection input:nth-of-type(2):focus,
+.selection input:nth-of-type(1):focus {
+background-image: none;
+}
 
 
 input[type="number"]:focus {
