@@ -1,0 +1,172 @@
+:root {
+    --strongCyan: hsl(172, 67%, 45%);
+    --strongCyand: hsl(172, 78%, 57%);
+    --strongCyani: hsla(172, 63%, 35%, 0.397);
+    --verydarkcyan: hsl(183, 100%, 15%);
+    --darkgrayishcyan: hsl(186, 14%, 43%);
+    --darkgrayishcyani: hsl(184, 14%, 56%);
+    --lightgrayishcyan: hsl(185, 41%, 84%);
+    --lightgrayishcyani: hsla(180, 46%, 92%, 0.623);
+    --white: hsl(0, 0%, 100%);
+}
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  * {
+      margin: 0;
+      padding: 0;
+  }
+
+body {
+    font-size: 24px;
+    background-color: var(--lightgrayishcyan);
+    display: flex;
+    font-family: 'Space Mono', monospace;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 1.5px;
+    
+}
+.title {
+    letter-spacing: 3px;
+    font-size: 0.8em;
+    font-weight: 700;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    color: var(--verydarkcyan);
+}
+.tips-container {
+    display: flex;
+    padding: 1em;
+    background-color: var(--white);
+    border-radius: 0.8em;
+}
+.tips-container div> input,
+.custom,
+.reset {
+    cursor: pointer;
+}
+.selection {
+    padding: 1em;
+}
+.selection input {
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    background-position: 1em 0.3rem;
+  }
+  .selection input:nth-of-type(2) {
+    background-image: url(images/icon-person.svg);
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    background-position: 1em 0.3rem; 
+}
+  .selection input:nth-of-type(1) {
+    background-image: url(images/icon-dollar.svg);
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    background-position: 1em 0.3rem;  
+}
+
+
+input[type="number"]:focus {
+    border: 1px solid var(--strongCyan);
+    outline: none;
+}
+.results{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--verydarkcyan);
+    padding: 2em 2em 0em 2em;
+    border-radius: 0.5em;
+}
+.results div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2em;
+    row-gap: 1.3em;
+}
+label {
+    color: var(--darkgrayishcyan);
+    font-size: 0.6em;
+    font-weight: 600;
+}
+.selection p button {
+    color: white;
+    font-size: 0.6em;
+    background-color: var(--verydarkcyan);
+    padding: 0.4em 1em;
+    margin-top: 1em;
+    font-weight: 500;
+    border-radius: 4px;
+    border: none;
+    width: 5em;
+}
+.selection p button:hover {
+    background-color: var(--strongCyan);
+    cursor: pointer;
+}
+.output, .number-p {
+    width: 18em;
+    color: var(--verydarkcyan);
+    font-weight: 700;
+    font-size: 0.7em;
+    padding: 0.3em 0; 
+    background-color: var(--lightgrayishcyani);
+    border: none;
+}
+.output, .number-p:focus {
+border-color: var(--strongCyan);
+}
+
+.custom {
+    width: 5.4em;
+    padding: 0.5em 0.1em;
+    color: var(--verydarkcyan);
+    background-color: var(--lightgrayishcyani);
+    border: none;
+    background-image: none !important;
+}
+.custom:placeholder-shown {
+    font-weight: 700;
+    font-size: 0.6em;
+    padding: 0.5em 0.1em;
+}
+.custom::placeholder{
+    color: var(--darkgrayishcyan);
+    
+}
+.reset {
+    margin: 8em 1em 2em 0em;
+    width: 100%;
+    text-align: center;
+    color: var(--verydarkcyan);
+    background-color: var(--strongCyani);
+    text-transform: uppercase;
+    padding: 0.6em 0em;
+    font-size: 0.6em;
+    border-radius: 2px;;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+.reset:hover {
+    background-color: var(--strongCyand);
+}
+.tipt {
+    color: var(--white);
+    font-size: 0.6em;
+}
+.person {
+    color: var(--darkgrayishcyan);
+    font-size: 0.8em;
+    font-weight: 600;
+}
+.num1,
+.num2 {
+    color: var(--strongCyan);
+    font-size: 1.5em;
+    font-weight: 600;
+}

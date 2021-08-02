@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tips Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="title">SPLI<br>TTER</h1>
+
+    <section class="tips-container">
+        <div class="selection">
+            <label for="output">Bill</label>
+            <br>
+            <input type="number" name="output" id="output" class="output">
+            <br>
+            <label for="select">Select Tip%</label>
+            <p><button>5%</button> <button>10%</button> <button>15%</button></p>
+            <p><button>25%</button> <button>50%</button> <input type="number" class="custom" name="custom" id="custom"
+                    placeholder="Custom">
+            </p>
+            <br>
+            <label for="number-p">Number of People</label>
+            <br>
+            <input type="number" name="number" class="number-p" id="number-p" required>
+        </div>
+        <div class="results">
+            <div>
+                <p class="tipt">Tip Amount <span class="person"> <br> / person</span></p>
+                <p class="num1">$0.00</p>
+                <p class="tipt">Total<br> <span class="person">/ person</span></p>
+                <p class="num2">$0.00</p>
+            </div>
+            <p class="reset">Reset</p>
+        </div>
+    </section>
+
+
+
+
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
