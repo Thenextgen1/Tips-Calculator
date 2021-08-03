@@ -28,7 +28,6 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    letter-spacing: 1.5px;
     
 }
 .title {
@@ -121,7 +120,12 @@ label {
     text-align: center;
 }
 
-
+.error-text{
+    color: rgba(255, 0, 0, 0.774);
+    position: relative;
+    left: 4em;
+    display: none;
+}
 
 .two, .five {
     position: relative;
@@ -140,13 +144,17 @@ label {
     width: 18em;
     color: var(--verydarkcyan);
     font-weight: 700;
-    font-size: 0.7em;
+    font-size: 0.8em;
     padding: 0.3em 0; 
     background-color: var(--lightgrayishcyani);
     border: none;
 }
+
 .output, .number-p:focus {
 border-color: var(--strongCyan);
+}
+.number-p.error:focus {
+    border-color: rgba(255, 0, 0, 0.774);
 }
 
 .custom {
@@ -158,7 +166,7 @@ border-color: var(--strongCyan);
     background-image: none !important;
     position: relative;
     font-weight: 700;
-    font-size: 0.7em;
+    font-size: 0.9em;
     right: 2.4em;
 }
 .custom:placeholder-shown {
@@ -225,7 +233,7 @@ font-size: 0.9em;
 }
 
 .output, .number-p {
-    width: 15em;
+    width: 100%;
     padding: 0.4em 0;
     margin: 0.3em 0 0 0;
 }
@@ -242,4 +250,19 @@ font-size: 0.9em;
    font-size: 0.8em;
 }
 
+}
+@media(min-width: 450px) and (max-width: 700px) {
+    .output, .number-p {
+        width: 100%;
+    }
+}
+@media(max-width: 321px) {
+    .error-text {
+        left: 0em;
+    }
+}
+@media(min-width: 321px) and (max-width: 400px) {
+    .error-text {
+        left: 1.9em;
+    }
 }
