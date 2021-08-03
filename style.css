@@ -157,6 +157,8 @@ border-color: var(--strongCyan);
     border: none;
     background-image: none !important;
     position: relative;
+    font-weight: 700;
+    font-size: 0.7em;
     right: 2.4em;
 }
 .custom:placeholder-shown {
