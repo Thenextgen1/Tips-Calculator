@@ -17,7 +17,8 @@ buttons.forEach((elem) => {
         let bills = parseInt(bill.value);
         if (typeof parseInt(persons.value) === 'number') {
             var tipsAmt = percentCalculator(bills, Percentvals)
-            num1.innerHTML = `$${tipsAmt}`;
+            let totaltips = parseFloat(tipsAmt.toFixed(3));
+            num1.innerHTML = `$${totaltips}`;
         }
         persons.addEventListener('input', () => {
             let total = tipsAmt * parseFloat(persons.value);
