@@ -14,41 +14,44 @@
 </head>
 
 <body>
-    <h1 class="title">SPLI<br>TTER</h1>
+    <header>
+        <h1 class="title">SPLI<br>TTER</h1>
+    </header>
 
-    <section class="tips-container">
-        <div class="selection">
-            <label for="output">Bill</label>
-            <br>
-            <input type="number" name="output" id="output" class="output">
-            <br>
-            <label for="select">Select Tip%</label>
-            <div class="buttons">
-                <button>5%</button>
-                <button class="two">10%</button>
-                <button class="three">15%</button>
-                <button>25%</button>
-                <button class="five">50%</button>
-                <input type="number" class="custom" name="custom" id="custom" placeholder="Custom">
+    <main>
+        <section class="tips-container">
+            <div class="selection">
+                <label for="output">Bill</label>
+                <br>
+                <input type="number" name="output" id="output" class="output">
+                <br>
+                <label for="select">Select Tip%</label>
+                <div class="buttons">
+                    <button>5%</button>
+                    <button class="two">10%</button>
+                    <button class="three">15%</button>
+                    <button>25%</button>
+                    <button class="five">50%</button>
+                    <input type="number" class="custom" name="custom" id="custom" placeholder="Custom">
+                </div>
+
+                <br>
+                <label for="number-p" class="label-num">Number of People <span class="error-text">Can't be
+                        zero</span></label>
+                <br>
+                <input type="number" name="number" class="number-p" id="number-p" required>
             </div>
-
-            <br>
-            <label for="number-p" class="label-num">Number of People <span class="error-text">Can't be
-                    zero</span></label>
-            <br>
-            <input type="number" name="number" class="number-p" id="number-p" required>
-        </div>
-        <div class="results">
-            <div>
-                <p class="tipt">Tip Amount <span class="person"> <br> / person</span></p>
-                <p class="num1">$0.00</p>
-                <p class="tipt">Total<br> <span class="person">/ person</span></p>
-                <p class="num2">$0.00</p>
+            <div class="results">
+                <div>
+                    <p class="tipt">Tip Amount <span class="person"> <br> / person</span></p>
+                    <p class="num1">$0.00</p>
+                    <p class="tipt">Total<br> <span class="person">/ person</span></p>
+                    <p class="num2">$0.00</p>
+                </div>
+                <p class="reset">Reset</p>
             </div>
-            <p class="reset">Reset</p>
-        </div>
-    </section>
-
+        </section>
+    </main>
 
 
 

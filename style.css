@@ -159,14 +159,14 @@ border-color: var(--strongCyan);
 
 .custom {
     width: 5.4em;
-    padding: 0.5em 0.1em;
+    padding: 0.4em 0.1em;
     color: var(--verydarkcyan);
     background-color: var(--lightgrayishcyani);
     border: none;
     background-image: none !important;
     position: relative;
     font-weight: 700;
-    font-size: 0.9em;
+    font-size: 0.6em;
     right: 2.4em;
 }
 .custom:placeholder-shown {
@@ -244,6 +244,7 @@ font-size: 0.9em;
 }
 .custom {
     width: 100%;
+    font-size: 0.8em;
 }
 .custom:placeholder-shown {
    text-align: center;
@@ -255,6 +256,7 @@ font-size: 0.9em;
     .output, .number-p {
         width: 100%;
     }
+   
 }
 
 @media(min-width: 370px) and (max-width: 400px) {
